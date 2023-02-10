@@ -109,50 +109,6 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
-<h2 id="topics">Topics</h2>
-<h3 id="unix">The Unix Shell</h3>
-1. **Introducing the Shell:** What is a command shell and why would I use one?
-1. **Navigating Files and Directories**: How can I move around on my computer? How can I see what files and directories I have? How can I specify the location of a file or directory on my computer?
-1. **Working With Files and Directories**: How can I create, copy, and delete files and directories? How can I edit files?
-1. **Pipes and Filters**: How can I combine existing commands to do new things?
-1. **Loops**: How can I perform the same actions on many different files?
-1. **Shell Scripts**: How can I save and re-use commands?
-1. **Finding Things**: How can I find files? How can I find things in files? 
-
-<h3 id="git">Version Control with Git</h3>
-1. **Automated Version Control**: What is version control and why should I use it?
-1. **Setting Up Git**: How do I get set up to use Git?
-1. **Creating a Repository**: Where does Git store information?
-1. **Tracking Changes**: How do I record changes in Git? How do I check the status of my version control repository? How do I record notes about what changes I made and why?
-1. **Exploring History**: How can I identify old versions of files? How do I review my changes? How can I recover old versions of files?
-1. **Ignoring Things**: How can I tell Git to ignore files I don’t want to track?
-1. **Remotes in GitHub**: How do I share my changes with others on the web?
-1. **Collaborating**: How can I use version control to collaborate with other people?
-1. **Conflicts**: What do I do when my changes conflict with someone else’s?
-1. **Open Science**: How can version control help me make my work more open?
-1. **Licensing**: What licensing information should I include with my work?
-1. **Citation**: How can I make my work easier to cite?
-1. **Hosting**: Where should I host my version control repositories? 
-
-<h3 id="python">Plotting and Programming with Python</h3>
-1. **Running and Quitting**: How can I run Python programs?
-1. **Variables and Assignment**: How can I store data in programs?
-1. **Data Types and Type Conversion**: What kinds of data do programs store? How can I convert one type to another?
-1. **Built-in Functions and Help**: How can I use built-in functions? How can I find out what they do? What kind of errors can occur in programs?
-1. **Libraries**: How can I use software that other people have written? How can I find out what that software does?
-1. **Reading Tabular Data into DataFrames**: How can I read tabular data?
-1. **Pandas DataFrames**: How can I do statistical analysis of tabular data?
-1. **Plotting**: How can I plot my data? How can I save my plot for publishing?
-1. **Lists**: How can I store multiple values?
-1. **For Loops**: How can I make a program do many things?
-1. **Conditionals**: How can programs do different things for different data?
-1. **Looping Over Data Sets**: How can I process many data sets with a single command?
-1. **Writing Functions**: How can I create my own functions?
-1. **Variable Scope**: How do function calls actually work? How can I determine where errors occurred?
-1. **Programming Style**: How can I make my programs more readable? How do most programmers format their code? How can programs check their own operation?
-
-<h2 id="registration">Registration</h2>
-To register, please use [our registrations page](https://workshops.evolbio.mpg.de/event/86/registrations/ "Registration form").
 
 
 {% comment %}
@@ -305,12 +261,57 @@ Edit the text to match who can attend the workshop. For instance:
 
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to ....
+    This workshop is primarily targeted at early career scientists and students (Master or PhD students, early PostDocs) at MPI for Evolutionary Biology or affiliated institutions within
+    the IMPRS graduate school. Should the allocated 24 seats not fill up, individuals from other institutions may apply as well. This will be communicated in due time.
 </p>
-{% endcomment %}
 
 <hr/>
 
+
+<h2 id="topics">Topics</h2>
+<h3 id="unix">The Unix Shell</h3>
+1. **Introducing the Shell:** What is a command shell and why would I use one?
+1. **Navigating Files and Directories**: How can I move around on my computer? How can I see what files and directories I have? How can I specify the location of a file or directory on my computer?
+1. **Working With Files and Directories**: How can I create, copy, and delete files and directories? How can I edit files?
+1. **Pipes and Filters**: How can I combine existing commands to do new things?
+1. **Loops**: How can I perform the same actions on many different files?
+1. **Shell Scripts**: How can I save and re-use commands?
+1. **Finding Things**: How can I find files? How can I find things in files? 
+
+<h3 id="git">Version Control with Git</h3>
+1. **Automated Version Control**: What is version control and why should I use it?
+1. **Setting Up Git**: How do I get set up to use Git?
+1. **Creating a Repository**: Where does Git store information?
+1. **Tracking Changes**: How do I record changes in Git? How do I check the status of my version control repository? How do I record notes about what changes I made and why?
+1. **Exploring History**: How can I identify old versions of files? How do I review my changes? How can I recover old versions of files?
+1. **Ignoring Things**: How can I tell Git to ignore files I don’t want to track?
+1. **Remotes in GitHub**: How do I share my changes with others on the web?
+1. **Collaborating**: How can I use version control to collaborate with other people?
+1. **Conflicts**: What do I do when my changes conflict with someone else’s?
+1. **Open Science**: How can version control help me make my work more open?
+1. **Licensing**: What licensing information should I include with my work?
+1. **Citation**: How can I make my work easier to cite?
+1. **Hosting**: Where should I host my version control repositories? 
+
+<h3 id="python">Plotting and Programming with Python</h3>
+1. **Running and Quitting**: How can I run Python programs?
+1. **Variables and Assignment**: How can I store data in programs?
+1. **Data Types and Type Conversion**: What kinds of data do programs store? How can I convert one type to another?
+1. **Built-in Functions and Help**: How can I use built-in functions? How can I find out what they do? What kind of errors can occur in programs?
+1. **Libraries**: How can I use software that other people have written? How can I find out what that software does?
+1. **Reading Tabular Data into DataFrames**: How can I read tabular data?
+1. **Pandas DataFrames**: How can I do statistical analysis of tabular data?
+1. **Plotting**: How can I plot my data? How can I save my plot for publishing?
+1. **Lists**: How can I store multiple values?
+1. **For Loops**: How can I make a program do many things?
+1. **Conditionals**: How can programs do different things for different data?
+1. **Looping Over Data Sets**: How can I process many data sets with a single command?
+1. **Writing Functions**: How can I create my own functions?
+1. **Variable Scope**: How do function calls actually work? How can I determine where errors occurred?
+1. **Programming Style**: How can I make my programs more readable? How do most programmers format their code? How can programs check their own operation?
+
+<h2 id="registration">Registration</h2>
+To register, please use [our registrations page](https://workshops.evolbio.mpg.de/event/86/registrations/ "Registration form").
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}

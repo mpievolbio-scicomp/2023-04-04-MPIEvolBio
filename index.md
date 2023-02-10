@@ -10,7 +10,7 @@ language: "en"     # lowercase two-letter ISO language code such as "fr" (see ht
 latitude: "54"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "10"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Apr 4-6, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 - 17:00 CEST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+humantime: "10:00 - 18:00 CEST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2023-04-04      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2023-04-06        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Carsten Fortmann-Grote", "Nikoleta Glynatsi"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -76,6 +76,39 @@ displayed if the 'eventbrite' field in the header is not set.
   scrolling="auto">
 </iframe>
 {% endif %}
+<h2 id="general">General Information</h2>
+
+{% comment %}
+INTRODUCTION
+
+Edit the general explanatory paragraph below if you want to change
+the pitch.
+{% endcomment %}
+{% if site.carpentry == "swc" %}
+{% include swc/intro.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/intro.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/intro.html %}
+{% endif %}
+
+{% if site.pilot %}
+This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
+{% endif %}
+
+{% comment %}
+AUDIENCE
+
+Explain who your audience is.  (In particular, tell readers if the
+workshop is only open to people from a particular institution.
+{% endcomment %}
+{% if site.carpentry == "swc" %}
+{% include swc/who.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/who.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/who.html %}
+{% endif %}
 <h2 id="topics">Topics</h2>
 <h3 id="unix">The Unix Shell</h3>
 1. **Introducing the Shell:** What is a command shell and why would I use one?
@@ -86,7 +119,7 @@ displayed if the 'eventbrite' field in the header is not set.
 1. **Shell Scripts**: How can I save and re-use commands?
 1. **Finding Things**: How can I find files? How can I find things in files? 
 
-<h3> id="git">Version Control with Git</h3>
+<h3 id="git">Version Control with Git</h3>
 1. **Automated Version Control**: What is version control and why should I use it?
 1. **Setting Up Git**: How do I get set up to use Git?
 1. **Creating a Repository**: Where does Git store information?
@@ -121,39 +154,6 @@ displayed if the 'eventbrite' field in the header is not set.
 <h2 id="registration">Registration</h2>
 To register, please use [our registrations page](https://workshops.evolbio.mpg.de/event/86/registrations/ "Registration form").
 
-<h2 id="general">General Information</h2>
-
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
-
-{% if site.pilot %}
-This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
-{% endif %}
-
-{% comment %}
-AUDIENCE
-
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
 
 {% comment %}
 LOCATION

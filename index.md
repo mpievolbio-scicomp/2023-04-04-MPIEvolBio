@@ -402,7 +402,7 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
-Stay tuned, we'll publish the workshop schedule soon...
+The workshop schedule is here: https://github.com/mpievolbio-scicomp/2023-04-04-MPIEvolBio/wiki/Schedule#schedule
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
@@ -479,4 +479,4 @@ during the workshop.
 Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
-{% endif %}
+  {% endif %}

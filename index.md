@@ -271,7 +271,7 @@ Edit the text to match who can attend the workshop. For instance:
 
 
 <h2 id="topics">Topics</h2>
-<h3 id="unix">The Unix Shell</h3>
+<h3 id="unix"><a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></h3>
 1. **Introducing the Shell:** What is a command shell and why would I use one?
 1. **Navigating Files and Directories**: How can I move around on my computer? How can I see what files and directories I have? How can I specify the location of a file or directory on my computer?
 1. **Working With Files and Directories**: How can I create, copy, and delete files and directories? How can I edit files?

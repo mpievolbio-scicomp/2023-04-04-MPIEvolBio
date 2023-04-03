@@ -280,7 +280,7 @@ Edit the text to match who can attend the workshop. For instance:
 1. **Shell Scripts**: How can I save and re-use commands?
 1. **Finding Things**: How can I find files? How can I find things in files? 
 
-<h3 id="git">Version Control with Git</h3>
+<h3 id="git"><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></h3>
 1. **Automated Version Control**: What is version control and why should I use it?
 1. **Setting Up Git**: How do I get set up to use Git?
 1. **Creating a Repository**: Where does Git store information?
@@ -295,7 +295,7 @@ Edit the text to match who can attend the workshop. For instance:
 1. **Citation**: How can I make my work easier to cite?
 1. **Hosting**: Where should I host my version control repositories? 
 
-<h3 id="python">Plotting and Programming with Python</h3>
+<h3 id="python"><a href="http://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming with Python</a></h3>
 1. **Running and Quitting**: How can I run Python programs?
 1. **Variables and Assignment**: How can I store data in programs?
 1. **Data Types and Type Conversion**: What kinds of data do programs store? How can I convert one type to another?
